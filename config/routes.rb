@@ -1,7 +1,7 @@
 DemoApp4::Application.routes.draw do
-  resources :microposts
-
-  resources :users
+  
+get 'microposts/:microposts', to: 'microposts#show', as: 'micropost'
+get 'users/:users', to: 'users#show', as: 'user'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
